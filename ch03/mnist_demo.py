@@ -36,6 +36,5 @@ if __name__ == '__main__':
     # print(mnist.test.images.shape, mnist.test.labels.shape)
     # print(mnist.validation.images.shape, mnist.validation.labels.shape)
     my_mnist()
-    # test
 
 
