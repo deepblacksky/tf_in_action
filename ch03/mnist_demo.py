@@ -27,7 +27,7 @@ def my_mnist():
         acc.append(accuracy.eval({x: mnist.test.images, y_: mnist.test.labels}))
 
     fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1)
+    fig.add_subplot(1, 1, 1)
     plt.plot(acc)
     plt.show()
 
