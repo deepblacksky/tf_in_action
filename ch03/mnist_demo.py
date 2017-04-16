@@ -21,8 +21,8 @@ def my_mnist():
         batch_xs, batch_ys = mnist.train.next_batch(100)
         train_step.run({x: batch_xs, y_: batch_ys})
         # accuracy
-        correct_pretiction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
-        accuracy = tf.reduce_mean(tf.cast(correct_pretiction, tf.float32))
+        correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+        accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
         # print(accuracy.eval({x: mnist.test.images, y_: mnist.test.labels}))
         acc.append(accuracy.eval({x: mnist.test.images, y_: mnist.test.labels}))
 
